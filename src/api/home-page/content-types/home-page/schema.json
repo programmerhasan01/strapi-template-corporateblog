@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Seoinformation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-information"
+    },
+    "HomeHero": {
+      "displayName": "HomeSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.home-section"
+    },
+    "BlogSelection": {
+      "type": "dynamiczone",
+      "components": [
+        "blog.featured-post",
+        "blog.post-selection"
+      ],
+      "required": true
+    }
+  }
+}

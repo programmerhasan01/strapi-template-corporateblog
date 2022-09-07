@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_layout_home_sections",
+  "info": {
+    "displayName": "HomeSection",
+    "icon": "city",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "CallToAction": {
+      "type": "string",
+      "required": true
+    },
+    "Buttons": {
+      "displayName": "Button",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.button"
+    }
+  }
+}
